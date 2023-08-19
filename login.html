@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>symple bank</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+        @layer components{
+           .form input{
+            @apply py-2 rounded-md
+            }
+        }
+
+
+      </style>
+    
+</head>
+<body>
+    <div class="contaner h-full flex justify-center items-center">
+        <div class="login-form bg-slate-200 w-5/6 py-10">
+            <h1 class="font-semibold text-3xl text-center">Login</h1>
+            <div class="form flex justify-center">
+                <form action="">
+                    <div class="email flex flex-col">
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
+                    </div>
+                    <div class="password flex flex-col">
+                                        
+                        <label for="password">password</label>
+                        <input id="password" type="password">
+                    </div>
+                    <input id="submit" class="bg-white m-4 ml-0 px-6 rounded-md cursor-pointer focus:bg-slate-500" type="button" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="./tailwind.config.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
