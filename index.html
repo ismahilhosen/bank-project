@@ -28,15 +28,15 @@
       <div class="balence-section grid grid-cols-3 gap-10 pt-10 w-full">
         <div class="diposit bg-green-400 text-center px-4 py-3 rounded-lg text-white">
           <h2 class="font-semibold text-3xl">Deposit</h2>
-          <h2 class="deposit-balance text-2xl">$0</h2>
+          <h2  class="deposit-balance text-2xl">$<span id="deposit-balance">00</span></h2>
         </div>
         <div class="diposit bg-lime-400 text-center px-4 py-3 rounded-lg text-white">
           <h2 class="font-semibold text-3xl">Withdraw</h2>
-          <h2 class="diposit-balance text-2xl">$0</h2>
+          <h2 class="diposit-balance text-2xl">$<span>00</span></h2>
         </div>
         <div class="diposit bg-emerald-400 text-center px-4 py-3 rounded-lg text-white">
           <h2 class="font-semibold text-3xl">Balence</h2>
-          <h2 class="diposit-balance text-2xl">$0</h2>
+          <h2  class="diposit-balance text-2xl">$<span id="account-balance">00</span></h2>
         </div>
 
       </div>
@@ -44,15 +44,15 @@
         <div class="bg-green-400 p-5 rounded-lg">
           <h1 class="font-semibold text-xl">Deposit Balance</h1>
           <div class="form">
-            <input type="text">
-            <input class="px-4 bg-slate-300 mt-3" type="button" value="deposit">
+            <input id="input-deposit" type="number">
+            <input id="deposit-btn" class="focus:border  cursor-pointer px-4 bg-slate-300 mt-3" type="button" value="deposit">
           </div>
           
         </div>
         <div class="bg-green-400 p-5 rounded-lg">
           <h1 class="font-semibold text-xl">Withdrow Balance</h1>
           <div class="form">
-            <input type="text">
+            <input type="number">
             <input class="px-4 bg-slate-300 mt-3" type="button" value="Withdrow">
           </div>
           
@@ -64,6 +64,6 @@
 
 
     <script src="./tailwind.config.js"></script>
-    <script src="./script.js"></script>
+    <script src="./deposit.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const inputEmail = document.getElementById("email")
+const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password")
 
 
@@ -17,3 +17,6 @@ document.getElementById("submit").addEventListener("click", function(){
     loginAth(inputEmail.value,inputPassword.value);
 
 })
+
+// login page 
+// deposit
