@@ -1,21 +1,10 @@
 document.getElementById("deposit-btn").addEventListener("click", function(){
     let accountBalance = document.getElementById("account-balance");
-
     let depositAmount = document.getElementById("input-deposit");
-
     let depositBalance = document.getElementById("deposit-balance");
-
-    let accountBalanceElemantString = accountBalance.innerText;
-
-    let depositBalanceElementString = depositBalance.innerText;
-
-    let depositAmountElementstring = depositAmount.value;
-
-    let accountBalanceElemant = parseFloat(accountBalanceElemantString);
-
-    let depositAmountElement = parseFloat(depositAmountElementstring);
-    
-    let depositBalanceElement = parseFloat(depositBalanceElementString);
+    let accountBalanceElemant = accountToNumber("account-balance");
+    let depositAmountElement = inputToNum("input-deposit");
+    let depositBalanceElement = accountToNumber("account-balance");
     console.log(depositBalanceElement);
 
     depositBalance.innerText = depositAmountElement + depositBalanceElement;
