@@ -32,11 +32,11 @@
         </div>
         <div class="diposit bg-lime-400 text-center px-4 py-3 rounded-lg text-white">
           <h2 class="font-semibold text-3xl">Withdraw</h2>
-          <h2 class="diposit-balance text-2xl">$<span>00</span></h2>
+          <h2 class="diposit-balance text-2xl">$<span id="withdrow-balance">00</span></h2>
         </div>
         <div class="diposit bg-emerald-400 text-center px-4 py-3 rounded-lg text-white">
           <h2 class="font-semibold text-3xl">Balence</h2>
-          <h2  class="diposit-balance text-2xl">$<span id="account-balance">00</span></h2>
+          <h2  class="diposit-balance text-2xl">$<span id="account-balance">08</span></h2>
         </div>
 
       </div>
@@ -52,8 +52,8 @@
         <div class="bg-green-400 p-5 rounded-lg">
           <h1 class="font-semibold text-xl">Withdrow Balance</h1>
           <div class="form">
-            <input type="number">
-            <input class="px-4 bg-slate-300 mt-3" type="button" value="Withdrow">
+            <input id="withdrow-input" type="number">
+            <input id="withdrow-btn" class="px-4 bg-slate-300 mt-3" type="button" value="Withdrow">
           </div>
           
         </div>
@@ -65,5 +65,6 @@
 
     <script src="./tailwind.config.js"></script>
     <script src="./deposit.js"></script>
+    <script src="./withdrow.js"></script>
 </body>
 </html>
